@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Rock Paper Scissors</h1>
+      <div class="score">
+        <h2 class="ties">Ties: 0</h2>
+      </div>
+      <div class="winnerDiv">
+        <h2 class="winner"></h2>
+        <button class="reset" onclick="restartGame()">Play Again</button>
+      </div>
+      <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Score: 0</h3>
+        <div class="playerImgs">
+          <img
+            src="img/rock.svg"
+            alt="Rock symbol with hand"
+            class="pImg"
+            id="rock"
+          />
+          <img
+            src="img/paper.svg"
+            alt="Paper symbol with hand"
+            class="pImg"
+            id="paper"
+          />
+          <img
+            src="img/scissors.svg"
+            alt="Scissors symbol with hand"
+            class="pImg"
+            id="scissors"
+          />
+        </div>
+      </div>
+      <div class="computerSection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Score: 0</h3>
+        <div class="computerImgs">
+          <img src="img/rock.svg" alt="Rock symbol with hand" class="rock" />
+          <img src="img/paper.svg" alt="Paper symbol with hand" class="paper" />
+          <img
+            src="img/scissors.svg"
+            alt="Scissors symbol with hand"
+            class="scissors"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/style.js"></script>
 </html>
