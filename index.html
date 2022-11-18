@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="top-bar">
+      <div class="btn one">⨉</div>
+      <div class="btn two">–</div>
+      <div class="btn three">⤡</div>
+    </div>
     <div class="game-container">
       <h1>Rock Paper Scissors</h1>
       <div class="score">
@@ -20,7 +25,6 @@
       </div>
       <div class="winnerDiv">
         <h2 class="winner"></h2>
-        <button class="reset" onclick="resetGame()">Play Again</button>
       </div>
       <div class="gameSection">
         <div class="playerSection">
@@ -47,6 +51,7 @@
           </div>
         </div>
       </div>
+      <button class="reset" onclick="resetGame()">New Game</button>
     </div>
   </body>
   <script src="js/style.js"></script>
