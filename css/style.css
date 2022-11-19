@@ -12,7 +12,7 @@ body {
 .top-bar {
   background-color: #fff;
   position: absolute;
-  top: 15%;
+  top: 10%;
   width: 80%;
   border: 1px solid #000000;
   border-radius: 5% 30% 5% 20% / 15% 5% 20% 5%;
@@ -100,9 +100,9 @@ body {
 .game-container::before {
   position: absolute;
   content: "";
-  top: 52%;
+  top: 50%;
   width: 85%;
-  height: 59%;
+  height: 65%;
   border: 1px solid #000000;
   z-index: -1;
 }
@@ -114,7 +114,6 @@ body {
 }
 
 .game-container::before {
-  background-color: #fff;
   left: 50%;
   border-radius: 10% 5% 5% 55% / 5% 5% 5% 10%;
   transform: translate3d(-50.5%, -50%, 0) scale(0.99) rotate(0.1deg);
@@ -192,12 +191,26 @@ h1 {
 .new-game-btn::before {
   content: "";
   position: absolute;
-  top: 71%;
+  top: 69%;
   left: 42%;
   width: 16%;
   height: 5%;
   border: 1px solid #000;
   border-radius: 10% 15% 35% 50% / 30% 25% 40% 15%;
-  transform: translate3d(-5%, -1%, 0) scale(1) rotate(1deg);
+  transform: translate3d(-5%, -5%, 0) scale(1) rotate(356deg);
   z-index: -1;
+}
+
+.credit {
+  padding: 10px 0 0 0;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.github {
+  color: #e5383b;
+  font-weight: 700;
+  text-decoration: none;
 }
