@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,11 +11,11 @@ body {
 .top-bar {
   background-color: #fff;
   position: absolute;
-  top: 17%;
+  top: 15%;
   width: 80%;
   border: 1px solid #000000;
   border-radius: 5% 30% 5% 20% / 15% 5% 20% 5%;
-  padding: 10px 15px;
+  padding: 15px 15px;
   z-index: 1;
 }
 
@@ -88,7 +90,7 @@ body {
   padding: 30px;
   width: 600px;
   border: 1px solid #000000;
-  border-radius: 1% 5% 55% 1% / 5% 1% 5% 6%;
+  border-radius: 15% 5% 5% 15% / 5% 5% 55% 5%;
   box-shadow: 20px 20px #eeeeee;
   z-index: 1;
 }
@@ -106,20 +108,24 @@ body {
 
 .game-container::after {
   left: 51%;
-  border-radius: 15% 20% 55% 35% / 1% 5% 15% 10%;
+  border-radius: 15% 10% 10% 35% / 1% 5% 15% 10%;
   transform: translate3d(-51%, -50%, 0) scale(0.99) rotate(1deg);
 }
 
 .game-container::before {
   background-color: #fff;
   left: 50%;
-  border-radius: 20% 10% 15% 15% / 5% 5% 15% 5%;
+  border-radius: 10% 5% 5% 55% / 5% 5% 5% 10%;
   transform: translate3d(-50.5%, -50%, 0) scale(0.99) rotate(0.1deg);
 }
 
 h1 {
   margin: 0 0 20px 0;
   text-align: center;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
   letter-spacing: 5px;
 }
 
@@ -162,7 +168,9 @@ h1 {
 }
 
 .new-game-btn {
+  font-family: "Alexandria", sans-serif;
   font-size: 17px;
+  font-weight: 300;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 15% 15% 25% 20% / 35% 25% 20% 15%;
