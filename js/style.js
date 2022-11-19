@@ -5,7 +5,6 @@ function resetGame() {
   winners = [];
   document.querySelector(".playerScore").textContent = "Score: 0";
   document.querySelector(".computerScore").textContent = "Score: 0";
-  document.querySelector(".ties").textContent = "Ties: 0";
   document.querySelector("winner").textContent = "";
   document.querySelector(".playerChoice").textContent = "";
   document.querySelector(".computerChoice").textContent = "";
@@ -30,7 +29,6 @@ function playRound(playerChoice) {
   }
 
   const computerChoice = computerSelect();
-
   const winner = checkWinner(playerChoice, computerChoice);
 
   winners.push(winner);
@@ -52,16 +50,13 @@ function displayEnd() {
     document.querySelector(".winner").textContent =
       "Sorry, the computer won 5 times";
   }
-  document.querySelector(".reset").style.display = "flex";
 }
 
 function displayRound(playerChoice, computerChoice, winner) {
-  document.querySelector(".playerChoice").textContent = `You Chose: ${
+  document.querySelector(".playerChoice").textContent = `Player Chose ${
     playerChoice.charAt(0).toUpperCase() + playerChoice.slice(1)
   }`;
-  document.querySelector(
-    ".computerChoice"
-  ).textContent = `The Computer Chose: ${
+  document.querySelector(".computerChoice").textContent = `Computer Chose ${
     computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)
   }`;
   displayRoundWinner(winner);
@@ -81,10 +76,8 @@ function displayRoundWinner(winner) {
 function tallyWins() {
   const pWinCount = winners.filter((item) => item == "Player").length;
   const cWinCount = winners.filter((item) => item == "Computer").length;
-  const ties = winners.filter((item) => item == "Tie").length;
   document.querySelector(".playerScore").textContent = `Score: ${pWinCount}`;
   document.querySelector(".computerScore").textContent = `Score: ${cWinCount}`;
-  document.querySelector(".ties").textContent = `Ties: ${ties}`;
 }
 
 function computerSelect() {
@@ -121,7 +114,6 @@ function checkWinner(choice1, choice2) {
 function setWins() {
   const pWinCount = winners.filter((item) => item == "Player").length;
   const cWinCount = winners.filter((item) => item == "Computer").length;
-  const ties = winners.filter((item) => item == "Tie").length;
 }
 
 startGame();

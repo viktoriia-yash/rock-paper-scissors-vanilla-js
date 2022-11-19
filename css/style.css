@@ -6,33 +6,12 @@ body {
   min-height: 100vh;
 }
 
-.game-container {
-  padding: 30px;
-  width: 600px;
-  border: 3px solid #000000;
-  border-radius: 1% 5% 55% 1% / 5% 1% 5% 6%;
-  box-shadow: 20px 20px #eeeeee;
-  z-index: 1;
-}
-
-.game-container::before {
-  position: absolute;
-  content: "";
-  top: 51%;
-  left: 50%;
-  width: 85%;
-  height: 55%;
-  border: 2px solid #000000;
-  border-radius: 20% 10% 5% 15% / 5% 5% 5% 5%;
-  transform: translate3d(-50.5%, -50%, 0) scale(0.99) rotate(0.1deg);
-  z-index: -1;
-}
-
 .top-bar {
+  background-color: #fff;
   position: absolute;
-  top: 18%;
+  top: 17%;
   width: 80%;
-  border: 3px solid #000000;
+  border: 1px solid #000000;
   border-radius: 5% 30% 5% 20% / 15% 5% 20% 5%;
   padding: 10px 15px;
   z-index: 1;
@@ -45,7 +24,7 @@ body {
   left: 50%;
   width: 100%;
   height: 100%;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 15% 1% 12% 14% / 2% 1% 4% 4%;
   transform: translate3d(-50%, -50%, 0) scale(1.01) rotate(0.5deg);
   z-index: -1;
@@ -57,6 +36,12 @@ body {
   border: 1px solid #000;
   border-radius: 40% 45% 75% 55% / 60% 30% 55% 45%;
   z-index: 1;
+}
+
+.one,
+.two,
+.three {
+  cursor: pointer;
 }
 
 .one {
@@ -99,9 +84,48 @@ body {
   transform: translate3d(-50%, -50%, 0) scale(1) rotate(200deg);
 }
 
+.game-container {
+  padding: 30px;
+  width: 600px;
+  border: 1px solid #000000;
+  border-radius: 1% 5% 55% 1% / 5% 1% 5% 6%;
+  box-shadow: 20px 20px #eeeeee;
+  z-index: 1;
+}
+
+.game-container::after,
+.game-container::before {
+  position: absolute;
+  content: "";
+  top: 52%;
+  width: 85%;
+  height: 59%;
+  border: 1px solid #000000;
+  z-index: -1;
+}
+
+.game-container::after {
+  left: 51%;
+  border-radius: 15% 20% 55% 35% / 1% 5% 15% 10%;
+  transform: translate3d(-51%, -50%, 0) scale(0.99) rotate(1deg);
+}
+
+.game-container::before {
+  background-color: #fff;
+  left: 50%;
+  border-radius: 20% 10% 15% 15% / 5% 5% 15% 5%;
+  transform: translate3d(-50.5%, -50%, 0) scale(0.99) rotate(0.1deg);
+}
+
 h1 {
+  margin: 0 0 20px 0;
   text-align: center;
   letter-spacing: 5px;
+}
+
+.winner {
+  text-align: center;
+  margin: 0 0 10px 0;
 }
 
 .gameSection {
@@ -110,8 +134,15 @@ h1 {
   justify-items: center;
 }
 
+.playerChoice,
+.computerChoice {
+  text-align: center;
+  margin: 15px 0 10px 0;
+}
+
 .playerScore,
 .computerScore {
+  margin: 15px 0 25px 0;
   text-align: center;
 }
 
@@ -121,6 +152,33 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-items: center;
-  column-gap: 5px;
+  column-gap: 20px;
   width: 250px;
+}
+
+.btn-new-game-container {
+  padding: 25px 0 0 0;
+  text-align: center;
+}
+
+.new-game-btn {
+  font-size: 17px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15% 15% 25% 20% / 35% 25% 20% 15%;
+  padding: 5px 20px;
+  z-index: 1;
+}
+
+.new-game-btn::before {
+  content: "";
+  position: absolute;
+  top: 71%;
+  left: 42%;
+  width: 16%;
+  height: 5%;
+  border: 1px solid #000;
+  border-radius: 10% 15% 35% 50% / 30% 25% 40% 15%;
+  transform: translate3d(-2%, -5%, 0) scale(1) rotate(1deg);
+  z-index: -1;
 }
