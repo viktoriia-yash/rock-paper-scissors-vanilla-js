@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@200;300;400;500;600;700&display=swap");
 
 body {
   display: flex;
@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: "Alexandria", sans-serif;
 }
 
 .top-bar {
@@ -122,14 +123,15 @@ body {
 h1 {
   margin: 0 0 20px 0;
   text-align: center;
-  font-family: "Alexandria", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 36px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
 }
 
 .winner {
+  font-weight: 500;
+  letter-spacing: 3px;
   text-align: center;
   margin: 0 0 10px 0;
 }
@@ -142,13 +144,17 @@ h1 {
 
 .playerChoice,
 .computerChoice {
-  text-align: center;
   margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .playerScore,
 .computerScore {
   margin: 15px 0 25px 0;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -162,19 +168,24 @@ h1 {
   width: 250px;
 }
 
+.playerImgs img {
+  cursor: pointer;
+}
+
 .btn-new-game-container {
   padding: 25px 0 0 0;
   text-align: center;
 }
 
 .new-game-btn {
-  font-family: "Alexandria", sans-serif;
-  font-size: 17px;
-  font-weight: 300;
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 15% 15% 25% 20% / 35% 25% 20% 15%;
   padding: 5px 20px;
+  cursor: pointer;
+  font-family: "Alexandria", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
   z-index: 1;
 }
 
@@ -187,6 +198,6 @@ h1 {
   height: 5%;
   border: 1px solid #000;
   border-radius: 10% 15% 35% 50% / 30% 25% 40% 15%;
-  transform: translate3d(-2%, -5%, 0) scale(1) rotate(1deg);
+  transform: translate3d(-5%, -1%, 0) scale(1) rotate(1deg);
   z-index: -1;
 }
