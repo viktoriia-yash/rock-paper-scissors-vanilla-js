@@ -13,7 +13,7 @@ body {
   background-color: #fff;
   position: absolute;
   top: 10%;
-  width: 80%;
+  width: 620px;
   border: 1px solid #000000;
   border-radius: 5% 30% 5% 20% / 15% 5% 20% 5%;
   padding: 15px 15px;
@@ -101,8 +101,8 @@ body {
   position: absolute;
   content: "";
   top: 50%;
-  width: 85%;
-  height: 65%;
+  width: 650px;
+  height: 450px;
   border: 1px solid #000000;
   z-index: -1;
 }
@@ -191,9 +191,9 @@ h1 {
 .new-game-btn::before {
   content: "";
   position: absolute;
-  top: 69%;
-  left: 42%;
-  width: 16%;
+  top: 70%;
+  left: 46%;
+  width: 130px;
   height: 5%;
   border: 1px solid #000;
   border-radius: 10% 15% 35% 50% / 30% 25% 40% 15%;
