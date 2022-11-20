@@ -188,19 +188,6 @@ h1 {
   z-index: 1;
 }
 
-.new-game-btn::before {
-  content: "";
-  position: absolute;
-  top: 70%;
-  left: 46%;
-  width: 130px;
-  height: 5%;
-  border: 1px solid #000;
-  border-radius: 10% 15% 35% 50% / 30% 25% 40% 15%;
-  transform: translate3d(-5%, -5%, 0) scale(1) rotate(356deg);
-  z-index: -1;
-}
-
 .credit {
   padding: 10px 0 0 0;
   font-size: 13px;
