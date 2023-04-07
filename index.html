@@ -8,47 +8,51 @@
       name="description"
       content="This project is a part of The Odin Project curriculum. The main goal was to create a Rock-paper-scissors game using Vanilla js, HTML5, and CSS3"
     />
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/icon.svg" type="image/svg" />
     <title>Rock Paper Scissors Project</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/style.js" defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="top-bar">
-      <div class="btn one">⨉</div>
-      <div class="btn two">–</div>
-      <div class="btn three">⤡</div>
-    </div>
-    <div class="game-container">
-      <h1>Rock Paper Scissors</h1>
-      <h2 class="winner">First to score 5 points wins the game</h2>
-      <div class="gameSection">
-        <div class="playerSection">
-          <h3 class="playerChoice">Player Chose</h3>
-          <h3 class="playerScore">Score: 0</h3>
-          <div class="playerImgs">
-            <img src="img/rock.svg" alt="Rock" class="pImg" id="rock" />
-            <img src="img/paper.svg" alt="Paper" class="pImg" id="paper" />
-            <img
-              src="img/scissors.svg"
-              alt="Scissors"
-              class="pImg"
-              id="scissors"
-            />
+    <div class="page">
+      <div class="game-container">
+        <h1 class="title">Rock Paper Scissors</h1>
+
+        <div class="game-screen">
+          <div class="headers">
+            <h2 class="move">
+              You have only&nbsp;
+              <section class="movesleft">5</section>
+              &nbsp;rounds to win
+            </h2>
+
+            <div class="roundResult">
+              Round' result:&nbsp;
+              <div class="result"></div>
+            </div>
+          </div>
+
+          <div class="match">
+            <img class="player-hand" src="./img/paper.svg" alt="paper icon" />
+            <img class="computer-hand" src="./img/rock.svg" alt="rock icon" />
+
+            <div class="playerScore">
+              <p>Player</p>
+              <p class="pScoreNumber count">0</p>
+            </div>
+            <div class="computerScore">
+              <p>Computer</p>
+              <p class="cScoreNumber count">0</p>
+            </div>
           </div>
         </div>
-        <div class="computerSection">
-          <h3 class="computerChoice">Computer Chose</h3>
-          <h3 class="computerScore">Score: 0</h3>
-          <div class="computerImgs">
-            <img src="img/rock.svg" alt="Rock" class="rock" />
-            <img src="img/paper.svg" alt="Paperd" class="paper" />
-            <img src="img/scissors.svg" alt="Scissors" class="scissors" />
-          </div>
+
+        <div class="options">
+          <button class="rock">Rock</button>
+          <button class="paper">Paper</button>
+          <button class="scissor">Scissors</button>
+          <button class="newGame">New Game</button>
         </div>
-      </div>
-      <div class="btn-new-game-container">
-        <button class="reset new-game-btn" onclick="newGame()">New Game</button>
       </div>
       <div class="credit">
         <a
