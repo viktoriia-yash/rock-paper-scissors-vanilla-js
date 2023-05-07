@@ -54,7 +54,7 @@ const game = () => {
       if (computer == "paper") {
         result.textContent = "Computer Won";
         cScore++;
-        cScoreBoard.textContent = ccScore;
+        cScoreBoard.textContent = cScore;
       } else {
         result.textContent = "Player Won";
         pScore++;
